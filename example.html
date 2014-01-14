@@ -2,60 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Foundation datepicker</title>
+  <title>Foundation DateTimePicker</title>
   <meta name="description" content="Port of bootstrap datepicker to Zurb Foundation framework">
   <meta name="author" content="Peter Beno, najlepsiwebdesigner@gmail.com">
   
 	<!-- CDN -->
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome-ie7.css" rel="stylesheet">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
-	<link href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	
-  
+	<script src="http://code.jquery.com/jquery.min.js"></script>	
   
   <!-- foundation start -->
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="../foundation/stylesheets/foundation.min.css">
-  <link rel="stylesheet" href="../foundation/stylesheets/app.css">
-  <script src="../foundation/javascripts/modernizr.foundation.js"></script>  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/css/foundation.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/modernizr.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+  
   <!-- foundation end -->
   
 	  
   <!-- foundation datepicker start -->
   <script src="js/foundation-datetimepicker.js"></script>
-<!--   <script src="js/bootstrap-datetimepicker.js"></script> -->
   <link rel="stylesheet" href="stylesheets/foundation-datepicker.css">
   <!-- foundation datepicker end -->
   
   <link rel="stylesheet" href="stylesheets/example.css">
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
 </head>
 <body>
-	<div class="container">
 	  <header class="row">
-        <h1 class="twelve columns subheader">Datetimepicker for Foundation <br><small>foundation-datepicker.js</small></h1>
+        <h1 class="large-12 columns subheader">DateTimePicker for Foundation <br><small>foundation-datetimepicker.js</small></h1>
 	  </header>
 	  <div class="row">
-	  	<div class="twelve columns alert-box alert">
+	  	<div class="large-12 columns alert-box alert">
 	  	This project is in early prototype stage, this documentation page belongs to foundation-datepicker and has to be rewritten.
 	  	</div>
 	  </div>
       <div class="row">
-        <div class="three columns" id="sidebar-wrap">
+        <div class="large-3 columns" id="sidebar-wrap">
           <h3>About</h3>
-          <p>Foundation jQuery datepicker plugin! 
-          	<ul>
+          <p>Foundation jQuery datepicker plugin!</p>
+          <ul>
 	          	<li><a href="http://foundation-datepicker.peterbeno.com/">project website</a></li>
 	          	<li><a href="https://github.com/najlepsiwebdesigner/foundation-datepicker">forked project @github</a></li>
           	</ul>	
-          </p>
 		  <p>
 		  Based on best available datepicker in this galaxy - bootstrap-datepicker:
 		  <ul>
@@ -73,7 +61,7 @@
 		  	<h6>Warning!</h6> <br> This plugin is really fresh and even when it uses really robust, tested base (bootstrap-datepicker plugin), this is only early prototype, which was not properly tested - so please, if you find an error, report it to github. Thanks! :)
 		  </div>
         </div>
-        <div class="nine columns">
+        <div class="large-9 columns">
           <h2>Example</h2>
           <p>Attached to a field with the format specified via options.</p>
           <div class="panel">
@@ -86,8 +74,8 @@
           <p>As component.</p>
           <div class="panel">
 			  <div class="row date collapse" id="dp3" data-date="12-02-2012 10:22" data-date-format="dd-mm-yyyy hh:ii">
-				<input class="columns three" size="16" type="text" value="12-02-2012 10:22" readonly>
-				<span class="prefix columns one end"><i class="icon-calendar"></i></span>
+				<input class="large-3 columns" size="16" type="text" value="12-02-2012 10:22" readonly>
+				<span class="prefix large-1 columns end"><i class="icon-calendar"></i></span>
 			  </div>
           </div>
           <p>Start with years viewMode.</p>
@@ -214,7 +202,6 @@ $(&#039;#dp5&#039;).fdatepicker()
         </div>
       </div>
     </section>
-    </div>
 
 	<script>
 		$(function(){
